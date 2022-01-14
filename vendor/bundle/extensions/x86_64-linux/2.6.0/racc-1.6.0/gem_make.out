@@ -1,0 +1,17 @@
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/racc-1.6.0/ext/racc/cparse
+/home/vagrant/.rbenv/versions/2.6.6/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20220114-22768-1lm7ec0.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20220114-22768-3g859d/racc

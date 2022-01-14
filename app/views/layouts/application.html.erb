@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnimePosts</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+    <body>
+    <div class="container">
+    <p>年度と季節を選んでアニメの検索ができます</p>
+      <%= form_with url:search_path ,method: :get, local: true do |f|%>
+        <%= f.select :year_id, options_for_select([['2022', 2022], ['2021', 2021], ['2020', 2020], ['2019', 2019], ['2018', 2018]]), {}, class: "search_form" %>
+        <%= f.select :season_id, options_for_select([['季節を選択してください', ''], ['春', 1], ['夏', 2], ['秋', 3], ['冬', 4]]), {}, class: "search_form" %>
+        <%= f.submit value: "検索", class: "search_button" %>
+      <% end %>
+      
+    <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<% if @title.nil? == true then %>
+  <p>
+  <%= @message%>
+  </p>
+<% else %>
+  <p>
+  <%= @year_code %>年度の<%= @season%>アニメは<%= @count %>件見つかりました
+  </p>
+  <% @title.each do |t| %>
+  <p>
+  <%= t %>
+  </p>
+  <% end %>
+<% end %>
+
+

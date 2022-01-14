@@ -1,0 +1,15 @@
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/home/vagrant/.rbenv/versions/2.6.6/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20220114-22768-1sny7hu.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/vagrant/work/sample/anime_posts/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20220114-22768-b6c7ne/skiptrace/internal
